@@ -21,7 +21,6 @@ namespace Nightscout
 			{ Microsoft.Azure.Mobile.Crashes.ErrorAttachmentLog.AttachmentWithText (CrossVersionTracking.Current.ToString (), "versionhistory.txt") };
 
 
-
 #if __IOS__
 			Microsoft.Azure.Mobile.Distribute.Distribute.DontCheckForUpdatesInDebug ();
 #elif __ANDROID__
@@ -50,7 +49,6 @@ namespace Nightscout
 
 				Settings.UserReferenceKey = installId?.ToString ("N");
 			});
-
 		}
 	}
 }
